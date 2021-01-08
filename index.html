@@ -27,9 +27,9 @@
             <div>
                 <div>
                     <ul class="mobile__menu-list">
-                        <li class="menu__item"><a href=".menu-bm">Menu</a></li>
-                        <li class="menu__item"><a href=".about-bm">About Us</a></li>
-                        <li class="menu__item"><a href="contact-bm">Contact Us</a></li>
+                        <li class="menu__item"><a href="#menu-bm">Menu</a></li>
+                        <li class="menu__item"><a href="about.html">About Us</a></li>
+                        <li class="menu__item"><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -43,16 +43,16 @@
         <!-- * Nav for Tablet and Desktop View -->
         <nav class="tab-desk__nav">
             <ul class="menu__list">
-                <li class="menu__item"><a href=".menu-bm">Menu</a></li>
-                <li class="menu__item"><a href=".about-bm">About Us</a></li>
-                <li class="menu__item"><a href=".contact-bm">Contact Us</a></li>
+                <li class="menu__item"><a href="#menu-bm">Menu</a></li>
+                <li class="menu__item"><a href="about.html">About Us</a></li>
+                <li class="menu__item"><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <!-- * Contact Info for Mobile -->
-        <section class="contact-hours__area margins">
+        <section class="contact-hours__area mob-paddings">
             <div class="mobile__contact">
                 <h3>321 North Main</h3>
                 <h3>Chatham, IL 62629</h3>
@@ -68,17 +68,18 @@
 
         <!-- * Appetizer Sub-Header and Menu -->
         <section class="menu__area">
-            <div class="appetizer__area">
+            <div class="appetizer__area" id="menu-bm">
                 <div class="sub-header__area">
                     <div class="sub-header">
                         <img class="sub-menu__logo" src="images/logo_images/appetizers_logo.png" alt="Sun Thai logo">
+                        <div class="color-overlay"></div>
                     </div>
-                    <div class="color-overlay"></div>
+                    
                 </div>
                 <!-- * Appetizers Menu Text -->
-                <div class="menu-text margins">
+                <div class="menu-text mob-margins">
                     <div class="menu-item">
-                        <p class="star">Ahi Tuna</p>
+                        <p class="star item-text">Ahi Tuna</p>
                         <p class="price">8.00</p>
                     </div>
                     <div class="menu-item">
@@ -89,7 +90,7 @@
                         <p class="item-text">Chicken Fried Dumplings (5)</p>
                         <p class="price">5.95</p>
                     </div>
-                    <div class="grid_item">
+                    <div class="grid-item">
                         <p class="star item-text">Fried Tofu</p>
                         <p class="sub-text">Deep fried bean curd served with our house special peanut sauce</p>
                         <p class="price">4.95</p>
@@ -104,12 +105,24 @@
                         <p class="sub-text">Rice paper wrapped chicken with fresh cilantro, lettuce and noodles served with our house special peanut sauce. Make with shrimp (Friday's only - 6.95)</p>
                         <p class="price">4.95</p>
                     </div>
-                    
-
                 </div>
             </div>
-
+        
         </section>
+
+        <footer class="ftr__primary mob-paddings">
+            <div class="soc-icon__wrapper">
+                <a href="https://www.facebook.com/ChathamSunthai/" target="_blank rel="noreferrer noopener"><img class="soc-icon" src="images/logo_images/facebook_logo.svg" alt="Facebook logo"></a>
+            </div>
+            <nav class="ftr__nav">
+                <ul class="ftr__menu-list">
+                    <li class="menu__item ftr__menu__item"><a class="menu__link" href="#menu-bm">Menu</a></li>
+                    <li class="menu__item ftr__menu__item"><a class="menu__link" href="about.html">About Us</a></li>
+                    <li class="menu__item ftr__menu__item"><a class="menu__link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">&copy; 20201 Sun Thai</p>
+        </footer>
         
         
 

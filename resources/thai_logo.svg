@@ -27,17 +27,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.66162813"
-     inkscape:cx="197.94644"
-     inkscape:cy="495.22732"
+     inkscape:zoom="1.3015582"
+     inkscape:cx="145.30613"
+     inkscape:cy="855.77325"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="1252"
+     inkscape:window-width="1280"
      inkscape:window-height="756"
-     inkscape:window-x="0"
-     inkscape:window-y="880"
+     inkscape:window-x="349"
+     inkscape:window-y="1102"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata5">
@@ -103,7 +103,9 @@
          id="tspan16-2"
          x="21.423101"
          y="79.164467"
-         style="font-size:22.5778px;line-height:1.25;stroke-width:0.264583">Appetizers</tspan></text>
+         style="font-size:22.5778px;line-height:1.25;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         dy="0"
+         rotate="0 0 0 0 0 0 0 0 0 0 0">Appetizers</tspan></text>
     <image
        width="36.758007"
        height="42.052376"
@@ -115,20 +117,6 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
        inkscape:export-filename="/Users/trevormerrick/Offline Files/practice/sunthai/images/logo_images/appetizers_logo.png" />
-    <text
-       xml:space="preserve"
-       style="font-size:22.5778px;line-height:0;font-family:Marion;-inkscape-font-specification:Marion;stroke-width:0.264583"
-       x="21.423101"
-       y="121.21684"
-       id="text18-7-3"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"
-       inkscape:export-filename="/Users/trevormerrick/Offline Files/practice/sunthai/images/logo_images/dinner_logo.png"><tspan
-         sodipodi:role="line"
-         id="tspan16-2-0"
-         x="21.423101"
-         y="121.21684"
-         style="font-size:22.5778px;line-height:1.25;stroke-width:0.264583">Dinner</tspan></text>
     <image
        width="36.758007"
        height="42.052376"
@@ -153,7 +141,7 @@
          id="tspan16-2-0-3"
          x="21.423101"
          y="163.26923"
-         style="font-size:22.5778px;line-height:1.25;stroke-width:0.264583">Lunch</tspan></text>
+         style="font-size:22.5778px;line-height:1.25;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">Lunch</tspan></text>
     <image
        width="36.758007"
        height="42.052376"
@@ -178,7 +166,7 @@
          id="tspan16-2-0-3-7"
          x="21.4231"
          y="205.32159"
-         style="font-size:22.5778px;line-height:1.25;stroke-width:0.264583">Noodles</tspan></text>
+         style="font-size:22.5778px;line-height:1.25;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">Noodles</tspan></text>
     <image
        width="36.758007"
        height="42.052376"
@@ -203,7 +191,7 @@
          id="tspan16-2-0-3-7-8"
          x="21.4231"
          y="247.37396"
-         style="font-size:22.5778px;line-height:1.25;stroke-width:0.264583">Soup</tspan></text>
+         style="font-size:22.5778px;line-height:1.25;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">Soup</tspan></text>
     <image
        width="36.758007"
        height="42.052376"
@@ -215,5 +203,19 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
        inkscape:export-filename="/Users/trevormerrick/Offline Files/practice/sunthai/images/logo_images/soup_logo.png" />
+    <text
+       xml:space="preserve"
+       style="font-size:22.5778px;line-height:0;font-family:Marion;-inkscape-font-specification:Marion;stroke-width:0.264583"
+       x="21.423101"
+       y="121.21684"
+       id="text18-7-3"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/Users/trevormerrick/Offline Files/practice/sunthai/images/logo_images/dinner_logo.png"><tspan
+         sodipodi:role="line"
+         id="tspan16-2-0"
+         x="21.423101"
+         y="121.21684"
+         style="font-size:22.5778px;line-height:1.25;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">Dinner</tspan></text>
   </g>
 </svg>

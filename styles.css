@@ -34,8 +34,12 @@ img {
     max-width: 100%;
 }
 
-.margins {
+.mob-margins {
     margin: 3rem 1rem;
+}
+
+.mob-paddings {
+    padding: 3rem 1rem;
 }
 
 
@@ -54,7 +58,7 @@ img {
 
 /* * Main Header*/
 .hero__area {
-    background: #F2B927 url(images/hero_images/thai_hero1.jpg) center/cover no-repeat;
+    background: #F2B927 url(images/hero_images/thai_hero1_sm.jpg) center/cover no-repeat;
     height: 100vh;
 }
 
@@ -162,11 +166,15 @@ img {
 .mobile__nav .toggler:checked ~ .nav > div {
     transform: scale(1);
     transition-duration: var(--menu-speed);
+    /* ! Not working */
+    z-index: 2;
 }
 
 .mobile__nav .toggler:checked ~ .nav > div > div {
     opacity: 1;
     transition: opacity 0.4s ease;
+    /* ! Not Working */
+    z-index: 2;
 }
 
 /* * Nav Menu Styles */
@@ -175,7 +183,6 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    /* height: auto; */
     visibility: hidden;
     overflow: hidden;
     display: flex;
@@ -245,11 +252,15 @@ img {
 }
 
 
-/* * Menu Header */
-.sub-header__area {
-    background: #F2B927 url(images/hero_images/thai_apetizers_lg.jpg) center/cover no-repeat;
+/* * Menu Sub-Header */
+.menu__area {
+    max-width: 1200px;
+}
+
+.sub-header {
+    background: #F2B927 url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
     width: 100vw;
-    height: 50vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,14 +275,16 @@ img {
 .color-overlay {
     width: 100%;
     height: 100%;
-    background: rgba(255, 188, 53, 0.7);
+    background: rgba(66, 49, 13, 0.8);
     position: absolute;
 }
 
-
+/* * Menu Text Area */
 .menu-text {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: 1rem 0;
+    justify-content: center;
+    /* flex-direction: column; */
 }
 
 .menu-item {
@@ -281,8 +294,8 @@ img {
 
 .grid-item {
     display: grid;
-    grid-template-columns: 25ch auto;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: minmax(25ch, 45ch) auto;
+    grid-template-rows: auto auto;
     grid-template-areas: 
         "item-text price"
         "sub-text price";
@@ -290,6 +303,7 @@ img {
 
 .item-text {
     grid-area: item-text;
+    font-weight: 700;
 }
 
 .sub-text {
@@ -298,10 +312,21 @@ img {
 
 .price {
     grid-area: price;
+    justify-self: end;
+    align-self: end;
+    font-size: 0.8rem;
 }
 
 /* * Asterisk (Star) Styling */
+.star {
+    position: relative;
+}
 
+.star::before {
+    content: '*';
+    position: absolute;
+    left: -0.6rem;
+}
 
 /* * Sub-menu Description Styling */
 .sub-text {
@@ -309,6 +334,33 @@ img {
 }
 
 
+/* * Footer Styling */
+.ftr__primary {
+    display: flex;
+    flex-direction: column;
+    background: #e9b13e;
+    align-items: center;
+}
+
+.soc-icon__wrapper a:hover,
+.soc-icon__wrapper a:focus {
+    opacity: 0.7;
+}
+
+.ftr__menu-list {
+    display: flex;
+    flex-direction: row;
+    width: 16rem;
+    justify-content: space-between;
+}
+
+.ftr__menu__item {
+    font-size: 1rem;
+}
+
+.menu__link {
+    font-family: 'Poppins', sans-serif;
+}
 
 
 
