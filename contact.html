@@ -18,7 +18,7 @@
         <h3 class="tab-desk__contact">217-483-8424</h3>
     </section>
     <!-- * Nav and Hamburger for Mobile Viewport -->
-    <nav class="mobile__nav">
+    <nav class="mbl__nav">
         <input class="toggler" type="checkbox">
         <div class="hamburger">
             <div></div> <!-- * Hamburger lines using CSS -->  
@@ -27,7 +27,7 @@
             <div>
                 <div>
                     <ul class="mobile__menu-list">
-                        <li class="menu__item"><a href="#menu-bm">Menu</a></li>
+                        <li class="menu__item"><a href="index.html#appetizers">Menu</a></li>
                         <li class="menu__item"><a href="about.html">About Us</a></li>
                         <li class="menu__item"><a href="contact.html">Contact Us</a></li>
                     </ul>
@@ -43,7 +43,7 @@
         <!-- * Nav for Tablet and Desktop View -->
         <nav class="tab-desk__nav">
             <ul class="menu__list">
-                <li class="menu__item"><a href="#menu-bm">Menu</a></li>
+                <li class="menu__item"><a href="index.html#appetizers">Menu</a></li>
                 <li class="menu__item"><a href="about.html">About Us</a></li>
                 <li class="menu__item"><a href="contact.html">Contact Us</a></li>
             </ul>
@@ -51,29 +51,36 @@
     </header>
 
     <main>
-        <section contact="form__wrapper">
-            <div class="contact-form mob-paddings subtle-bg">
-                <div class="input-fields">
-                    <input type="text" class="input" placeholder="Name">
+        <section class="form__wrapper mbl-paddings subtle-bg">
+            <h2 class="contact-hdr">Contact Us</h2>
+            <p class="contact-sub-hdr">Drop us a line and say hello!  Did we serve you well?  Tell us your experience!</p>
+            <div class="contact-form">
+                <form class="input-fields">
+                    <input type="text" class="input" placeholder="First Name">
+                    <input type="text" class="input" placeholder="Last Name">
                     <input type="text" class="input" placeholder="Email Address">
                     <input type="text" class="input" placeholder="Phone">
                     <input type="text" class="input" placeholder="Subject">
-                </div>
+                </form>
                 <div class="msg">
-                    <textarea placeholder="Message"></textarea>
+                    <textarea class="input" placeholder="Message"></textarea>
                     <div class="btn">Send</div>
                 </div>   
+            </div>
+            <p class="contact-sub-hdr">Also consider writing a review for us on Yelp!</p>
+            <div class="soc-icon__wrapper">
+                <a href="https://www.yelp.com/writeareview/biz/nW6mZMdaoNAO6Nf2DkkOsw?return_url=%2Fbiz%2FnW6mZMdaoNAO6Nf2DkkOsw&source=biz_details_war_button" target="_blank" rel="noreferrer noopener"><img class="soc-icon" src="images/logo_images/yelp_logo.svg" alt="Yelp logo"></a>
             </div>
         </section>
     </main>
 
-    <footer class="ftr__secondary mob-paddings">
+    <footer class="ftr__secondary mbl-paddings">
         <div class="soc-icon__wrapper">
-            <a href="https://www.facebook.com/ChathamSunthai/" target="_blank rel="noreferrer noopener"><img class="soc-icon" src="images/logo_images/facebook_logo.svg" alt="Facebook logo"></a>
+            <a href="https://www.facebook.com/ChathamSunthai/" target="_blank" rel="noreferrer noopener"><img class="soc-icon" src="images/logo_images/facebook_logo.svg" alt="Facebook logo"></a>
         </div>
         <nav class="ftr__nav">
             <ul class="ftr__menu-list">
-                <li class="menu__item ftr__menu__item"><a class="menu__link" href="#menu-bm">Menu</a></li>
+                <li class="menu__item ftr__menu__item"><a class="menu__link" href="index.html#appetizers">Menu</a></li>
                 <li class="menu__item ftr__menu__item"><a class="menu__link" href="about.html">About Us</a></li>
                 <li class="menu__item ftr__menu__item"><a class="menu__link" href="contact.html">Contact Us</a></li>
             </ul>

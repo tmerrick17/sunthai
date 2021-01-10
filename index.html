@@ -18,7 +18,7 @@
         <h3 class="tab-desk__contact">217-483-8424</h3>
     </section>
     <!-- * Nav and Hamburger for Mobile Viewport -->
-    <nav class="mobile__nav">
+    <nav class="mbl__nav">
         <input class="toggler" type="checkbox">
         <div class="hamburger">
             <div></div> <!-- * Hamburger lines using CSS -->  
@@ -26,8 +26,8 @@
         <div class="nav">
             <div>
                 <div>
-                    <ul class="mobile__menu-list">
-                        <li class="menu__item"><a href="#menu-bm">Menu</a></li>
+                    <ul class="mbl__menu-list">
+                        <li class="menu__item"><a href="#appetizers">Menu</a></li>
                         <li class="menu__item"><a href="about.html">About Us</a></li>
                         <li class="menu__item"><a href="contact.html">Contact Us</a></li>
                     </ul>
@@ -43,7 +43,7 @@
         <!-- * Nav for Tablet and Desktop View -->
         <nav class="tab-desk__nav">
             <ul class="menu__list">
-                <li class="menu__item"><a href="#menu-bm">Menu</a></li>
+                <li class="menu__item"><a href="#appetizers">Menu</a></li>
                 <li class="menu__item"><a href="about.html">About Us</a></li>
                 <li class="menu__item"><a href="contact.html">Contact Us</a></li>
             </ul>
@@ -51,33 +51,69 @@
     </header>
 
     <main>
-        <!-- * Contact Info for Mobile -->
-        <section class="contact-hours__area mob-paddings subtle-bg">
-            <div class="mobile__contact">
-                <h3>321 North Main</h3>
-                <h3>Chatham, IL 62629</h3>
-            </div>
-            <div class="mobile__contact cta__button">
-                <a href="tel:1-217-483-8424">Call to Order</a>
-            </div>
-            <div class="mobile__contact">
-                <h3>Tue - Fri: 11am - 2pm</h3>
-                <h3>Mon - Sat: 4pm - 9pm</h3>
-            </div>
-        </section>
+        <div class="mbl-paddings subtle-bg">
+            <!-- * Contact Info for Mobile -->
+            <section class="contact-hours__area">
+                <div class="mobile__contact">
+                    <h3>321 North Main</h3>
+                    <h3>Chatham, IL 62629</h3>
+                </div>
+                <div class="cta__button btn-margins">
+                    <a class="btn" href="tel:1-217-483-8424">Call to Order</a>
+                </div>
+                <div class="mobile__contact">
+                    <h3>Tue - Fri: &nbsp 11am - 2pm</h3>
+                    <h3>Mon - Sat: &nbsp 4pm - 9pm</h3>
+                    <h3>Sun: &nbsp Closed</h3>
+                </div>
+            </section>
+            <!-- * Menu Category Button Area -->
+            <section class="menu-category__area">
+                <div class="cta__button">
+                    <a class="btn__alt" href="#appetizers">Appetizers</a>
+                </div>
+                <div class="cta__button">
+                    <a class="btn__alt" href="#soups">Soups</a>
+                </div>
+                <div class="cta__button">
+                    <a class="btn__alt" href="#chi-lunch"><span class="chinese-short">Chi </span><span class="chinese-full">Chinese</span>Lunch</a>
+                </div>
+                <div class="cta__button">
+                    <a class="btn__alt" href="#thai-lunch">Thai Lunch</a>
+                </div>
+                <div class="cta__button">
+                    <a class="btn__alt" href="#dinner">Dinner</a>
+                </div>
+                <div class="cta__button">
+                    <a class="btn__alt" href="#rice">Rice Dishes</a>
+                </div>
+                <div class="cta__button">
+                    <a class="btn__alt" href="#salads">Thai Salads</a>
+                </div>
+                <div class="cta__button">
+                    <a class="btn__alt" href="#noodles">Noodles</a>
+                </div>
+                <div class="cta__button">
+                    <a class="btn__alt" href="#beverages">Beverages</a>
+                </div>
+                <div class="cta__button">
+                    <a class="btn__alt" href="#desserts">Deserts</a>
+                </div>
+            </section>
+        </div>
 
         <!-- * Appetizer Sub-Header and Menu -->
         <section class="menu__area">
-            <div class="appetizer__area" id="menu-bm">
-                <div class="sub-header__area">
-                    <div class="sub-header">
-                        <img class="sub-menu__logo" src="images/logo_images/appetizers_logo.png" alt="Sun Thai logo">
+            <div class="appetizer__area" id="appetizers">
+                <header class="sub-hdr__area">
+                    <div class="sub__hdr appetizer__hero">
+                        <img class="category__logo" src="images/logo_images/appetizers_logo.png" alt="Sun Thai logo">
                         <div class="color-overlay"></div>
                     </div>
-                    
-                </div>
+                </header>
+                
                 <!-- * Appetizers Menu Text -->
-                <div class="menu-text mob-margins">
+                <div class="menu-text mbl-margins">
                     <div class="menu-item">
                         <p class="star item-text">Ahi Tuna</p>
                         <p class="price">8.00</p>
@@ -107,16 +143,106 @@
                     </div>
                 </div>
             </div>
-        
         </section>
 
-        <footer class="ftr__primary mob-paddings">
+        <!-- * Soups Sub-Header and Menu -->
+        <section class="menu__area">
+            <div class="soups__area" id="soups">
+                <header class="sub-hdr__area">
+                    <div class="sub__hdr soups__hero">
+                        <img class="category__logo" src="images/logo_images/soup_logo.png" alt="Sun Thai logo">
+                        <div class="color-overlay"></div>
+                    </div>
+                </header>
+                
+                <!-- * Soups Menu Text -->
+                <div class="menu-text mbl-margins">
+                    <div class="menu-item">
+                        <p class="star item-text">Ahi Tuna</p>
+                        <p class="price">8.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <p class="item-text">Crab Rangoon (4)</p>
+                        <p class="price">5.95</p>
+                    </div>
+                    <div class="menu-item">
+                        <p class="item-text">Chicken Fried Dumplings (5)</p>
+                        <p class="price">5.95</p>
+                    </div>
+                    <div class="grid-item">
+                        <p class="star item-text">Fried Tofu</p>
+                        <p class="sub-text">Deep fried bean curd served with our house special peanut sauce</p>
+                        <p class="price">4.95</p>
+                    </div>
+                    <div class="grid-item">
+                        <p class="item-text">Satay Chicken (3)</p>
+                        <p class="sub-text">Chicken marinated with fresh herbs, fried on skewers, served with peanut butter sauce and cucumber salad</p>
+                        <p class="price">8.95</p>
+                    </div>
+                    <div class="grid-item">
+                        <p class="item-text">Summer Rolls (2)</p>
+                        <p class="sub-text">Rice paper wrapped chicken with fresh cilantro, lettuce and noodles served with our house special peanut sauce. Make with shrimp (Friday's only - 6.95)</p>
+                        <p class="price">4.95</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- * Chinese Lunch Sub-Header and Menu -->
+        <section class="menu__area">
+            <div class="chi-lunch__area" id="chi-lunch">
+                <header class="sub-hdr__area">
+                    <div class="sub__hdr chi-lunch__hero">
+                        <img class="category__logo" src="images/logo_images/appetizers_logo.png" alt="Sun Thai logo">
+                        <div class="color-overlay"></div>
+                    </div>
+                </header>
+                
+                <!-- * Soups Menu Text -->
+                <div class="menu-text mbl-margins">
+                    <div class="menu-item">
+                        <p class="star item-text">Ahi Tuna</p>
+                        <p class="price">8.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <p class="item-text">Crab Rangoon (4)</p>
+                        <p class="price">5.95</p>
+                    </div>
+                    <div class="menu-item">
+                        <p class="item-text">Chicken Fried Dumplings (5)</p>
+                        <p class="price">5.95</p>
+                    </div>
+                    <div class="grid-item">
+                        <p class="star item-text">Fried Tofu</p>
+                        <p class="sub-text">Deep fried bean curd served with our house special peanut sauce</p>
+                        <p class="price">4.95</p>
+                    </div>
+                    <div class="grid-item">
+                        <p class="item-text">Satay Chicken (3)</p>
+                        <p class="sub-text">Chicken marinated with fresh herbs, fried on skewers, served with peanut butter sauce and cucumber salad</p>
+                        <p class="price">8.95</p>
+                    </div>
+                    <div class="grid-item">
+                        <p class="item-text">Summer Rolls (2)</p>
+                        <p class="sub-text">Rice paper wrapped chicken with fresh cilantro, lettuce and noodles served with our house special peanut sauce. Make with shrimp (Friday's only - 6.95)</p>
+                        <p class="price">4.95</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- * Footer -->
+        <footer class="ftr__primary mbl-paddings">
             <div class="soc-icon__wrapper">
                 <a href="https://www.facebook.com/ChathamSunthai/" target="_blank rel="noreferrer noopener"><img class="soc-icon" src="images/logo_images/facebook_logo.svg" alt="Facebook logo"></a>
             </div>
             <nav class="ftr__nav">
                 <ul class="ftr__menu-list">
-                    <li class="menu__item ftr__menu__item"><a class="menu__link" href="#menu-bm">Menu</a></li>
+                    <li class="menu__item ftr__menu__item"><a class="menu__link" href="#appetizers">Menu</a></li>
                     <li class="menu__item ftr__menu__item"><a class="menu__link" href="about.html">About Us</a></li>
                     <li class="menu__item ftr__menu__item"><a class="menu__link" href="contact.html">Contact Us</a></li>
                 </ul>

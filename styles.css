@@ -1,8 +1,10 @@
-/* * CSS Reset and Universal Styles */
+/* * Define vars for the root element */
 :root {
-    --menu-speed: .75s;
+    --gold-hex: #E9B13E;
+    --violet-hex: #351246;
 }
 
+/* * CSS Reset and Universal Styles */
 *,
 ::before,
 ::after {
@@ -34,12 +36,16 @@ img {
     max-width: 100%;
 }
 
-.mob-margins {
+.mbl-margins {
     margin: 3rem 1rem;
 }
 
-.mob-paddings {
+.mbl-paddings {
     padding: 3rem 1rem;
+}
+
+.btn-margins {
+    margin: 3rem 0;
 }
 
 
@@ -58,7 +64,7 @@ img {
 
 /* * Main Header*/
 .hero__area {
-    background: #F2B927 url(images/hero_images/thai_hero1_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/hero_images/thai_hero1_sm.jpg) center/cover no-repeat;
     height: 100vh;
 }
 
@@ -82,14 +88,14 @@ img {
 
 
 /* * Navigation and Hamburger Styling */
-.mobile__nav {
+.mbl__nav {
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1;
 }
 
-.mobile__nav .toggler {
+.mbl__nav .toggler {
     position: absolute;
     top: 0;
     right: 0;
@@ -99,7 +105,7 @@ img {
     opacity: 0;
 }
 
-.mobile__nav .hamburger {
+.mbl__nav .hamburger {
     position: absolute;
     top: 0;
     right: 0;
@@ -107,14 +113,14 @@ img {
     width: 4rem;
     height: 4rem;
     padding: 1rem;
-    background-color: rgba(240, 195, 81, 0.7);
+    background-color: rgba(240, 195, 81, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 /* * Middle Hamburger Line */
-.mobile__nav .hamburger > div {
+.mbl__nav .hamburger > div {
     position: relative;
     width: 100%;
     height: 2px;
@@ -126,8 +132,8 @@ img {
 }
 
 /* * Top and Bottom Hamburger Lines */
-.mobile__nav .hamburger > div:before,
-.mobile__nav .hamburger > div:after {
+.mbl__nav .hamburger > div:before,
+.mbl__nav .hamburger > div:after {
     content: '';
     position: absolute;
     z-index: 1;
@@ -138,40 +144,40 @@ img {
 }
 
 /* * Bottom Hamburger Line */
-.mobile__nav .hamburger > div:after {
+.mbl__nav .hamburger > div:after {
     top: .6rem;
 }
 
 /* * Toggler Animation */
-.mobile__nav .toggler:checked + .hamburger > div {
+.mbl__nav .toggler:checked + .hamburger > div {
     transform: rotate(135deg);
 }
 
 /* * Turn lines in X */
-.mobile__nav .toggler:checked + .hamburger > div:before,
-.mobile__nav .toggler:checked + .hamburger > div:after {
+.mbl__nav .toggler:checked + .hamburger > div:before,
+.mbl__nav .toggler:checked + .hamburger > div:after {
     top: 0;
     transform: rotate(90deg);
 }
 
 /* * Rotate on hover when checked */
-.mobile__nav .toggler:checked:hover + .hamburger > div {
+.mbl__nav .toggler:checked:hover + .hamburger > div {
     transform: rotate(225deg);
 }
 
 /* * Show Nav Menu List */
-.mobile__nav .toggler:checked ~ .nav {
+.mbl__nav .toggler:checked ~ .nav {
     visibility: visible;
 }
 
-.mobile__nav .toggler:checked ~ .nav > div {
+.mbl__nav .toggler:checked ~ .nav > div {
     transform: scale(1);
-    transition-duration: var(--menu-speed);
+    transition-duration: 0.75s;
     /* ! Not working */
     z-index: 2;
 }
 
-.mobile__nav .toggler:checked ~ .nav > div > div {
+.mbl__nav .toggler:checked ~ .nav > div > div {
     opacity: 1;
     transition: opacity 0.4s ease;
     /* ! Not Working */
@@ -179,7 +185,7 @@ img {
 }
 
 /* * Nav Menu Styles */
-.mobile__nav .nav {
+.mbl__nav .nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -191,7 +197,7 @@ img {
     align-items: center;
 }
 
-.mobile__nav .nav > div {
+.mbl__nav .nav > div {
     background-color: rgba(242, 185, 39, .95);
     border-radius: 50%;
     width: 100vh;
@@ -204,7 +210,7 @@ img {
     transition: all 0.4s ease;
 }
 
-.mobile__nav .nav > div > div {
+.mbl__nav .nav > div > div {
     text-align: center;
     max-width: 90vw;
     max-height: 100vh;
@@ -238,33 +244,58 @@ img {
     overflow: visible;
 }
 
-/* * Call to Action buton */
-.cta__button {
-    margin: 3rem 0;
-}
-
-.cta__button a {
+/* * Call to Action button */
+.btn {
     font-family: Poppins, sans-serif;
     font-size: 2rem;
+    text-align: center;
     font-weight: 900;
+    margin: 1rem 0;
     padding: 0.8rem 2rem 0.9rem;
-    background-color: #E9B13E;
+    background-color: var(--gold-hex);
     border-radius: 3rem;
+    width: 10rem;
+    align-self: center;
 }
 
 .cta__button a:hover,
 .cta__button a:focus {
-    color: #b83400;
+    color: var(--violet-hex);
 }
 
 
-/* * Menu Sub-Header */
+ /* * Menu Category Button Styling */
+.menu-category__area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-rows: 1fr; */
+    justify-items: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 3rem 0 2rem;
+}
+
+ .btn__alt {
+    font-family: Poppins, sans-serif;
+    color: var(--gold-hex);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.8rem 2rem 0.9rem;
+    border: 3px solid var(--gold-hex);
+    border-radius: 3rem;
+}
+
+.chinese-full {
+    display: none;
+}
+
+
+/* * Menu Sub-Headers and All Category Images */
 .menu__area {
     max-width: 1200px;
 }
 
-.sub-header {
-    background: #F2B927 url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
+.sub__hdr {
     width: 100vw;
     height: 30vh;
     display: flex;
@@ -273,7 +304,7 @@ img {
     position: relative;
 }
 
-.sub-menu__logo {
+.category__logo {
     width: 13rem; 
     z-index: 1;
 }
@@ -281,8 +312,48 @@ img {
 .color-overlay {
     width: 100%;
     height: 100%;
-    background: rgba(66, 49, 13, 0.8);
+    background: rgba(53, 18, 70, 0.8);
     position: absolute;
+}
+
+.appetizer__hero {
+    background: var(--gold-hex) url(images/hero_images/appetizers_sm.jpg) center/cover no-repeat;
+}
+
+.soups__hero {
+    background: var(--gold-hex) url(images/hero_images/soup_sm.jpg) center/cover no-repeat;
+}
+
+.chi-lunch__hero {
+    background: var(--gold-hex) url(images/hero_images/appetizers_sm.jpg) center/cover no-repeat;
+}
+
+.thai-lunch__hero {
+    background: var(--gold-hex) url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
+}
+
+.dinner__hero {
+    background: var(--gold-hex) url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
+}
+
+.rice__hero {
+    background: var(--gold-hex) url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
+}
+
+.salads__hero {
+    background: var(--gold-hex) url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
+}
+
+.noodles__hero {
+    background: var(--gold-hex) url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
+}
+
+.beverages__hero {
+    background: var(--gold-hex) url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
+}
+
+.deserts__hero {
+    background: var(--gold-hex) url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
 }
 
 /* * Menu Text Area */
@@ -290,7 +361,6 @@ img {
     display: grid;
     gap: 1rem 0;
     justify-content: center;
-    /* flex-direction: column; */
 }
 
 .menu-item {
@@ -344,8 +414,12 @@ img {
 .ftr__primary {
     display: flex;
     flex-direction: column;
-    background: #e9b13e;
+    background: var(--gold-hex);
     align-items: center;
+}
+
+.soc-icon__wrapper {
+    width: 3rem;
 }
 
 .soc-icon__wrapper a:hover,
@@ -366,11 +440,13 @@ img {
 
 .menu__link {
     font-family: 'Poppins', sans-serif;
-} */
+}
 
 /* * Contact Page */
+
+/* * Contact Header */
 .contact-hero__area {
-    background: #F2B927 url(images/hero_images/contact_hero_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/hero_images/contact_hero_sm.jpg) center/cover no-repeat;
     height: 30vh;
 }
 
@@ -380,29 +456,85 @@ img {
     border-radius: 4rem;
 }
 
+/* * Contact Us Form Styling */
 .form__wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-hdr {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.contact-sub-hdr {
+    text-align: left;
+    margin: 1rem 0;
+    max-width: 45ch;
 }
 
 .contact-form {
-    max-width: 550px;
+    min-width: 40vw;
+    max-width: 90vw;
     margin: 1rem;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
     display: flex;
+    flex-direction: column;
 }
 
 .input-fields {
     display: flex;
+    flex-direction: column;
+    margin-right: 4%;
 }
 
+.input {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-fields .input,
+.msg textarea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--gold-hex);
+    padding: 1rem;
+    color: #fff;
+    width: 100%;
+}
+
+.msg textarea {
+    height: 7rem;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+::-moz-input-placeholder {
+    color: #fff;
+}
+
+::-ms-input-placeholder {
+    color: #fff;
+}
+
+/* * Contact Us Footer Styling */
 .ftr__secondary {
     display: flex;
     flex-direction: column;
-    background: #e9b13e;
+    background: var(--gold-hex);
     align-items: center;
 }
 
@@ -414,6 +546,22 @@ img {
         align-items: center;
         padding: 2rem 1rem 0;
     }
+}
+
+
+/* * Desktop Viewport */
+@media screen and (min-width: 1000px) {
+    /* * Contact Us Form Styling */
+    .contact-form {
+        flex-direction: row;
+    }
+
+
+    .msg textarea {
+        height: 16.28rem
+    }
+
+
 }
 
 
