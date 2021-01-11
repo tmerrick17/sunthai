@@ -325,35 +325,35 @@ img {
 }
 
 .chi-lunch__hero {
-    background: var(--gold-hex) url(images/hero_images/appetizers_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/hero_images/chi-dinner_sm.jpg) center/cover no-repeat;
 }
 
 .thai-lunch__hero {
-    background: var(--gold-hex) url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/hero_images/thai_lunch_sm.jpg) center/cover no-repeat;
 }
 
 .dinner__hero {
-    background: var(--gold-hex) url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/hero_images/dinner_sm.jpg) center/cover no-repeat;
 }
 
 .rice__hero {
-    background: var(--gold-hex) url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/hero_images/rice_sm.jpg) center/cover no-repeat;
 }
 
 .salads__hero {
-    background: var(--gold-hex) url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/hero_images/salads_sm.jpg) center/cover no-repeat;
 }
 
 .noodles__hero {
-    background: var(--gold-hex) url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/hero_images/noodles_sm.jpg) center/cover no-repeat;
 }
 
 .beverages__hero {
-    background: var(--gold-hex) url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/hero_images/beverages_sm.jpg) center/cover no-repeat;
 }
 
 .deserts__hero {
-    background: var(--gold-hex) url(images/hero_images/thai_appetizers_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/hero_images/deserts_sm.jpg) center/cover no-repeat;
 }
 
 /* * Menu Text Area */
