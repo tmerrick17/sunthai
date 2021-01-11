@@ -29,7 +29,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #b83400;
+    color: var(--violet-hex);
 }
 
 img {
@@ -48,6 +48,12 @@ img {
     margin: 3rem 0;
 }
 
+
+/* * One-off Stylings */
+.btm-cta__btn {
+    display: flex;
+    justify-content: center;
+}
 
 /* * Hidden Items in Mobile Viewport */
 .tab-desk__nav {
@@ -258,9 +264,10 @@ img {
     align-self: center;
 }
 
-.cta__button a:hover,
-.cta__button a:focus {
+.cta__btn a:hover,
+.cta__btn a:focus {
     color: var(--violet-hex);
+    border-color: var(--violet-hex);
 }
 
 
@@ -268,7 +275,6 @@ img {
 .menu-category__area {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* grid-template-rows: 1fr; */
     justify-items: center;
     align-items: center;
     gap: 4rem;
@@ -283,6 +289,12 @@ img {
     padding: 0.8rem 2rem 0.9rem;
     border: 3px solid var(--gold-hex);
     border-radius: 3rem;
+}
+
+.btn__alt:hover,
+.btn__alt:focus {
+    color: var(--violet-hex);
+    border-color: var(--violet-hex);
 }
 
 .chinese-full {
@@ -302,11 +314,15 @@ img {
     justify-content: center;
     align-items: center;
     position: relative;
+
+    /* border: 2px solid #000; */
 }
 
 .category__logo {
-    width: 13rem; 
+    height: 5rem;
     z-index: 1;
+
+    /* border: 2px solid white; */
 }
 
 .color-overlay {
@@ -316,44 +332,46 @@ img {
     position: absolute;
 }
 
+
+/* * Sub-Header Hero Images for Mobile Viewport */
 .appetizer__hero {
-    background: var(--gold-hex) url(images/hero_images/appetizers_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/menu_images/appetizers_sm.jpg) center/cover no-repeat;
 }
 
 .soups__hero {
-    background: var(--gold-hex) url(images/hero_images/soup_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/menu_images/soup_sm.jpg) center/cover no-repeat;
 }
 
 .chi-lunch__hero {
-    background: var(--gold-hex) url(images/hero_images/chi-dinner_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/menu_images/chi-dinner_sm.jpg) center/cover no-repeat;
 }
 
 .thai-lunch__hero {
-    background: var(--gold-hex) url(images/hero_images/thai_lunch_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/menu_images/thai_lunch_sm.jpg) center/cover no-repeat;
 }
 
 .dinner__hero {
-    background: var(--gold-hex) url(images/hero_images/dinner_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/menu_images/dinner_sm.jpg) center/cover no-repeat;
 }
 
 .rice__hero {
-    background: var(--gold-hex) url(images/hero_images/rice_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/menu_images/rice_sm.jpg) center/cover no-repeat;
 }
 
 .salads__hero {
-    background: var(--gold-hex) url(images/hero_images/salads_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/menu_images/salads_sm.jpg) center/cover no-repeat;
 }
 
 .noodles__hero {
-    background: var(--gold-hex) url(images/hero_images/noodles_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/menu_images/noodles_sm.jpg) center/cover no-repeat;
 }
 
 .beverages__hero {
-    background: var(--gold-hex) url(images/hero_images/beverages_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/menu_images/beverages_sm.jpg) center/cover no-repeat;
 }
 
 .deserts__hero {
-    background: var(--gold-hex) url(images/hero_images/deserts_sm.jpg) center/cover no-repeat;
+    background: var(--gold-hex) url(images/menu_images/deserts_sm.jpg) center/cover no-repeat;
 }
 
 /* * Menu Text Area */
@@ -419,7 +437,7 @@ img {
 }
 
 .soc-icon__wrapper {
-    width: 3rem;
+    width: 2rem;
 }
 
 .soc-icon__wrapper a:hover,
@@ -442,18 +460,83 @@ img {
     font-family: 'Poppins', sans-serif;
 }
 
-/* * Contact Page */
+/* * About Us Page */
 
-/* * Contact Header */
-.contact-hero__area {
-    background: var(--gold-hex) url(images/hero_images/contact_hero_sm.jpg) center/cover no-repeat;
+/* * About Us Hero */
+.about-hero__area {
+    background: var(--gold-hex) url(images/hero_images/about_hero_sm.jpg) center/cover no-repeat;
     height: 30vh;
 }
 
 .logo-mod {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.8);
     padding: 1.2rem 1.5rem 1rem 1rem;
     border-radius: 4rem;
+}
+
+.paddings__mod {
+    padding: 3rem 0;
+}
+
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.quotes {
+    font: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    line-height: 3rem;
+}
+
+.quote1 {
+    background: var(--violet-hex);
+    color: #fff;
+} 
+
+.quote2 {
+    background: #fff;
+    border: 1rem solid var(--gold-hex);
+}
+
+.quote3 {
+    background: var(--gold-hex);
+}
+
+.quote-padding {
+    padding: 4rem 2rem;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+figcaption {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+cite {
+    display: block;
+    text-align: right;
+    line-height: 1rem;
+}
+
+.solo-cite {
+    margin-top: 2rem
+}
+
+
+/* * Contact Us Page */
+
+/* * Contact Us Hero */
+.contact-hero__area {
+    background: var(--gold-hex) url(images/hero_images/contact_hero_sm.jpg) center/cover no-repeat;
+    height: 30vh;
 }
 
 /* * Contact Us Form Styling */
@@ -463,15 +546,16 @@ img {
     align-items: center;
 }
 
-.contact-hdr {
+.hdr-title {
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
     text-align: center;
+    padding-bottom: 3rem
 }
 
-.contact-sub-hdr {
+.contact__sub-hdr {
     text-align: left;
-    margin: 1rem 0;
+    margin-bottom: 4rem;
     max-width: 45ch;
 }
 
@@ -479,7 +563,7 @@ img {
     min-width: 40vw;
     max-width: 90vw;
     margin: 1rem;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(53, 18, 70, 0.9);
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
