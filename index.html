@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="main.css">
     <!-- <link rel="stylesheet" href="css/main.min.css"> -->
     <title>Sun Thai: Homepage</title>
 </head>
@@ -42,7 +42,7 @@
 
     <!-- * Main Hero Image and Logo -->
     <header class="hero__area main__header">
-        <div class="logo-text__wrapper">
+        <div class="logo-text__wrapper logo-mod">
             <a href="index.html"><img src="images/logo_images/sunthai_logo-text.png" alt="Sun Thai logo"></a>
         </div>
 
@@ -57,24 +57,25 @@
     </header>
 
     <main>
-        <div class="mbl-paddings subtle-bg">
-            <!-- * Contact Info for Mobile -->
-            <section class="contact-hours__area">
-                <div class="mobile__contact">
-                    <h3>321 North Main</h3>
-                    <h3>Chatham, IL 62629</h3>
-                </div>
-                <div class="cta__btn btn-margins">
-                    <a class="btn" href="tel:1-217-483-8424">Call to Order</a>
-                </div>
-                <div class="mobile__contact">
-                    <h3>Tue - Fri: &nbsp; 11am - 2pm</h3>
-                    <h3>Mon - Sat: &nbsp; 4pm - 9pm</h3>
-                    <h3>Sun: &nbsp; Closed</h3>
-                </div>
-            </section>
+        <!-- * Contact Info for Mobile -->
+        <section class="contact-hours__area mbl-paddings null-paddings">
+            <div class="mbl__contact-loc mbl__display">
+                <a class="location-link" href="https://www.google.com/maps/place/Sun+Thai/@39.6779881,-89.7072167,17z/data=!3m1!4b1!4m5!3m4!1s0x887541673a9e2785:0x718850d53bebe0f5!8m2!3d39.6779881!4d-89.705028" target="_blank" rel="noreferrer noopener">
+                <h3>321 North Main<br>
+                Chatham, IL 62629</h3></a>
+            </div>
+            <div class="cta__btn btn-margins mbl__display">
+                <a class="btn" href="tel:1-217-483-8424">Call to Order</a>
+            </div>
+            <div class="mbl__contact-hrs">
+                <h3>Tue - Fri: &nbsp; 11am - 2pm</h3>
+                <h3>Mon - Sat: &nbsp; 4pm - 9pm</h3>
+                <h3>Sun: &nbsp; Closed</h3>
+            </div>
+        </section>
 
-            <!-- * Menu Category Button Area -->
+        <!-- * Menu Category Button Area -->
+        <div class="subtle-bg mbl-paddings">
             <div class="menu-category__area">
                 <div class="cta__btn">
                     <a class="btn__alt" href="#appetizers">Appetizers</a>
@@ -104,7 +105,7 @@
                     <a class="btn__alt" href="#beverages">Beverages</a>
                 </div>
                 <div class="cta__btn">
-                    <a class="btn__alt" href="#desserts">Deserts</a>
+                    <a class="btn__alt" href="#deserts">Deserts</a>
                 </div>
             </div>
         </div>
@@ -112,7 +113,7 @@
         <!-- * Appetizer Sub-Header and Menu -->
         <div class="menu__area">
             <header class="sub-hdr__area" id="appetizers">
-                <div class="sub__hdr appetizer__hero" role="img" aria-label="Thai appetizer plate with purple overlay color">
+                <div class="sub__hdr appetizer__hero" role="img" aria-label="Thai appetizer plate">
                     <img class="category__logo" src="images/logo_images/appetizers_logo.png" alt="Appetizers logo">
                     <div class="color-overlay"></div>
                 </div>
@@ -521,7 +522,7 @@
 
         <!-- * Call to Order Button -->
         <div class="btm-cta__btn">
-            <div class="cta__btn mbl-paddings btn-margins">
+            <div class="cta__btn btn-margins">
                 <a class="btn" href="tel:1-217-483-8424">Call to Order</a>
             </div>
         </div>
@@ -542,12 +543,7 @@
             <p class="copyright">&copy; 2021 Sun Thai</p>
         </footer>
         
-        
-
-
-        
     </main>
-
 
 </body>
 </html>

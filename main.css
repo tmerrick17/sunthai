@@ -53,6 +53,7 @@ img {
 .btm-cta__btn {
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
 }
 
 /* * Hidden Items in Mobile Viewport */
@@ -125,6 +126,10 @@ img {
     align-items: center;
 }
 
+.mbl__menu-list {
+    font-weight: 700;
+}
+
 /* * Middle Hamburger Line */
 .mbl__nav .hamburger > div {
     position: relative;
@@ -186,7 +191,7 @@ img {
 .mbl__nav .toggler:checked ~ .nav > div > div {
     opacity: 1;
     transition: opacity 0.4s ease;
-    /* ! Not Working */
+    /* ! Z-index Not Working */
     z-index: 2;
 }
 
@@ -239,15 +244,19 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     align-items: center;
+    text-align: center;
     line-height: 3rem;
+}
+
+.location-link {
+    color: #707070;
 }
 
 /* * Subtle Background Pattern */
 .subtle-bg {
     background: #FFF url(images/misc_images/lilypads.png);
-    overflow: visible;
+    /* overflow: visible; */
 }
 
 /* * Call to Action button */
@@ -278,10 +287,10 @@ img {
     justify-items: center;
     align-items: center;
     gap: 4rem;
-    margin: 3rem 0 2rem;
+    margin: 3rem 0;
 }
 
- .btn__alt {
+.btn__alt {
     font-family: Poppins, sans-serif;
     color: var(--gold-hex);
     font-size: 2rem;
@@ -314,15 +323,11 @@ img {
     justify-content: center;
     align-items: center;
     position: relative;
-
-    /* border: 2px solid #000; */
 }
 
 .category__logo {
     height: 5rem;
     z-index: 1;
-
-    /* border: 2px solid white; */
 }
 
 .color-overlay {
@@ -335,43 +340,43 @@ img {
 
 /* * Sub-Header Hero Images for Mobile Viewport */
 .appetizer__hero {
-    background: var(--gold-hex) url(images/menu_images/appetizers_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(images/menu_images/appetizers_sm.jpg) center/cover no-repeat;
 }
 
 .soups__hero {
-    background: var(--gold-hex) url(images/menu_images/soup_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(images/menu_images/soup_sm.jpg) center/cover no-repeat;
 }
 
 .chi-lunch__hero {
-    background: var(--gold-hex) url(images/menu_images/chi_lunch_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(images/menu_images/chi_lunch_sm.jpg) center/cover no-repeat;
 }
 
 .thai-lunch__hero {
-    background: var(--gold-hex) url(images/menu_images/thai_lunch_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(images/menu_images/thai_lunch_sm.jpg) center/cover no-repeat;
 }
 
 .dinner__hero {
-    background: var(--gold-hex) url(images/menu_images/dinner_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(images/menu_images/dinner_sm.jpg) center/cover no-repeat;
 }
 
 .rice__hero {
-    background: var(--gold-hex) url(images/menu_images/rice_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(images/menu_images/rice_sm.jpg) center/cover no-repeat;
 }
 
 .salads__hero {
-    background: var(--gold-hex) url(images/menu_images/salads_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(images/menu_images/salads_sm.jpg) center/cover no-repeat;
 }
 
 .noodles__hero {
-    background: var(--gold-hex) url(images/menu_images/noodles_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(images/menu_images/noodles_sm.jpg) center/cover no-repeat;
 }
 
 .beverages__hero {
-    background: var(--gold-hex) url(images/menu_images/beverages_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(images/menu_images/beverages_sm.jpg) center/cover no-repeat;
 }
 
 .deserts__hero {
-    background: var(--gold-hex) url(images/menu_images/deserts_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(images/menu_images/deserts_sm.jpg) center/cover no-repeat;
 }
 
 /* * Menu Text Area */
@@ -470,8 +475,8 @@ img {
 
 .logo-mod {
     background: rgba(255, 255, 255, 0.8);
-    padding: 1.2rem 1.5rem 1rem 1rem;
     border-radius: 4rem;
+    padding: 1.2rem 1.5rem 1rem 1rem;
 }
 
 .paddings__mod {
@@ -493,21 +498,21 @@ img {
     line-height: 3rem;
 }
 
-.quote1 {
+.qte-1 {
     background: var(--violet-hex);
     color: #fff;
 } 
 
-.quote2 {
+.qte-2 {
     background: #fff;
     border: 1rem solid var(--gold-hex);
 }
 
-.quote3 {
+.qte-3 {
     background: var(--gold-hex);
 }
 
-.quote-padding {
+.qte-padding {
     padding: 4rem 2rem;
 }
 
@@ -623,18 +628,130 @@ cite {
 }
 
 /* * Tablet Viewport */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
+    /* * Universal Styles  */
+    .mbl-paddings {
+        padding: 4rem 2rem;
+    }
+
+    /* * Contact Info in Pre-Header */
+    .contact__header {
+        display: flex;
+        justify-content: center;
+        padding: 0.8rem 0;
+        color: #707070;
+    }
+
+    .tab-desk__contact + .tab-desk__contact {
+        margin-left: 3rem;
+    }
+
+    /* * Mobile Nav and Hamburger Styles */
+    .mbl__nav {
+        top: 3.23rem;
+    }
+
+    .mbl__nav .nav > div {
+        width: 100vw;
+        height: 100vw;
+    }
+
+    /* * Main Header Styles */
     .main__header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2rem 1rem 0;
     }
+
+    /* * Hiding Location and CTA button */
+    .mbl__display {
+        display: none;
+    }
+
+    /* * Hours Stylings */
+    .contact-hours__area {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+
+    .mbl__contact-hrs {
+        margin: 0.8rem 0;
+        display: flex;
+        /* justify-content: space-between; */
+        line-height: initial;
+    }
+
+    .mbl__contact-hrs h3 {
+        margin: 0 1rem;
+    }
+}
+
+/* * Tablet Tweekpoint */
+@media screen and (min-width: 768px) {
+    /* * Home Page Hero Area */
+    .hero__area {
+        background: var(--gold-hex) url(images/hero_images/main_hero1_md.jpg) center/cover no-repeat;
+    }
+
+    /* * About Us Pictures Grid */
+    .about__wrapper {
+        display: grid;
+        grid-template-areas: 
+            "qte-1 qte-1"
+            "ptr-1 lnd-1"
+            "ptr-1 lnd-2"
+            "qte-2 qte-2"
+            "lnd-3 ptr-2"
+            "lnd-4 ptr-2"
+            "qte-3 qte-3";
+    }
+
+    .qte-1 {
+        grid-area: qte-1;
+    } 
+
+    .qte-2 {
+        grid-area: qte-2;
+    } 
+
+    .qte-3 {
+        grid-area: qte-3;
+    } 
+
+    .ptr-1 {
+        grid-area: ptr-1;
+    }
+
+    .ptr-2 {
+        grid-area: ptr-2;
+    }
+
+    .lnd-1 {
+        grid-area: lnd-1;
+    }
+
+    .lnd-2 {
+        grid-area: lnd-2;
+    }
+
+    .lnd-3 {
+        grid-area: lnd-3;
+    }
+
+    .lnd-4 {
+        grid-area: lnd-4;
+    }
+
+    .about__wrapper img {
+        object-fit: cover;
+    }
+
 }
 
 
 /* * Desktop Viewport */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
     /* * Contact Us Form Styling */
     .contact-form {
         flex-direction: row;
