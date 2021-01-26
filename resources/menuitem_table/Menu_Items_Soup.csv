@@ -1,0 +1,12 @@
+Menu_Items_Soup,,,,,,
+item_num,item_name,category,special,price,description,item_num
+150,Tom Yum Seafood,Soup,*,6.95,9.95,"Hot and sour soup with combinations of seafood, mushrooms, citrus leaves, tomatoes, green onions and cilantro."
+151,Tom Yum Koong,Soup,*,6.95,9.95,"Shrimp hot and soupr soup, mushrooms, citrus leaves, onions, lemon grass and tomatoes. "
+152,Tom Yum Kai,Soup,,6.95,8.25,"Hot and sour soup with chicken, lime juice, lemon grass, tomatoes, mushrooms and cilantro,"
+153,Tom Ka Kai,Soup,,6.95,8.25,"Hot and sour soup with chicken, lime juice, lemon grass, tomatoes, mushrooms, cilantro, served in coconut milk. "
+154,Tom Ka Seafood,Soup,*,6.95,8.25,"Hot and sour soup with combination of seafood, mushrooms, citrus leaves, lemon grass, tomatoes, green onions, cilantro, served in coconut milk."
+155,Vegetable Soup,Soup,*,,6.95,"Tasty soup with chicken broth, ground chicken, vermicelli, with mix of vegetables. (Sub Shrimp for Lent $8.95)"
+156,Woonsen Soup,Soup,*,,6.95,"Tasty soup with ground chicken, vermicelli, onions, mushroom and egg. (Sub Shrimp for for Lent $8.95)"
+157,Pho Kai,Soup,,,8.25,"Rice noodle soup, chicken, bean sprouts and onions"
+158,Pho Beef,Soup,,,8.25,"Rice noodle soup, beef, onion, bean sprouts, lime and basil leaves in beef broth"
+159,Barmee Egg Noodle,Soup,*,,8.25,"Bean sprouts, onion and cilantro with choice of meat. (Dry: Served with lettuce, with choice of meat and topped with crushed peanuts and lime $6.95)"

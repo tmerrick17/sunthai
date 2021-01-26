@@ -71,7 +71,7 @@ img {
 
 /* * Main Header*/
 .hero__area {
-    background: var(--gold-hex) url(images/hero_images/main_hero1_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(../images/hero_images/main_hero1_sm.jpg) center/cover no-repeat;
     height: 100vh;
 }
 
@@ -255,7 +255,7 @@ img {
 
 /* * Subtle Background Pattern */
 .subtle-bg {
-    background: #FFF url(images/misc_images/lilypads.png);
+    background: #FFF url(../images/misc_images/lilypads.png);
     /* overflow: visible; */
 }
 
@@ -327,6 +327,7 @@ img {
 
 .category__logo {
     height: 5rem;
+    /* max-width: 20%; */
     z-index: 1;
 }
 
@@ -340,43 +341,43 @@ img {
 
 /* * Sub-Header Hero Images for Mobile Viewport */
 .appetizer__hero {
-    background: var(--violet-hex) url(images/menu_images/appetizers_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(../images/menu_images/appetizers_sm.jpg) center/cover no-repeat;
 }
 
 .soups__hero {
-    background: var(--violet-hex) url(images/menu_images/soup_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(../images/menu_images/soup_sm.jpg) center/cover no-repeat;
 }
 
 .chi-lunch__hero {
-    background: var(--violet-hex) url(images/menu_images/chi_lunch_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(../images/menu_images/chi_lunch_sm.jpg) center/cover no-repeat;
 }
 
 .thai-lunch__hero {
-    background: var(--violet-hex) url(images/menu_images/thai_lunch_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(../images/menu_images/thai_lunch_sm.jpg) center/cover no-repeat;
 }
 
 .dinner__hero {
-    background: var(--violet-hex) url(images/menu_images/dinner_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(../images/menu_images/dinner_sm.jpg) center/cover no-repeat;
 }
 
 .rice__hero {
-    background: var(--violet-hex) url(images/menu_images/rice_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(../images/menu_images/rice_sm.jpg) center/cover no-repeat;
 }
 
 .salads__hero {
-    background: var(--violet-hex) url(images/menu_images/salads_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(../images/menu_images/salads_sm.jpg) center/cover no-repeat;
 }
 
 .noodles__hero {
-    background: var(--violet-hex) url(images/menu_images/noodles_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(../images/menu_images/noodles_sm.jpg) center/cover no-repeat;
 }
 
 .beverages__hero {
-    background: var(--violet-hex) url(images/menu_images/beverages_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(../images/menu_images/beverages_sm.jpg) center/cover no-repeat;
 }
 
 .deserts__hero {
-    background: var(--violet-hex) url(images/menu_images/deserts_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(../images/menu_images/deserts_sm.jpg) center/cover no-repeat;
 }
 
 /* * Menu Text Area */
@@ -469,7 +470,7 @@ img {
 
 /* * About Us Hero */
 .about-hero__area {
-    background: var(--gold-hex) url(images/hero_images/about_hero_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(../images/hero_images/about_hero_sm.jpg) center/cover no-repeat;
     height: 30vh;
 }
 
@@ -487,6 +488,11 @@ img {
     display: flex;
     flex-direction: column;
     align-content: center;
+}
+
+.obj-fit {
+    height: 100%;
+    object-fit: cover;
 }
 
 .quotes {
@@ -540,7 +546,7 @@ cite {
 
 /* * Contact Us Hero */
 .contact-hero__area {
-    background: var(--gold-hex) url(images/hero_images/contact_hero_sm.jpg) center/cover no-repeat;
+    background: var(--violet-hex) url(../images/hero_images/contact_hero_sm.jpg) center/cover no-repeat;
     height: 30vh;
 }
 
@@ -691,7 +697,7 @@ cite {
 @media screen and (min-width: 768px) {
     /* * Home Page Hero Area */
     .hero__area {
-        background: var(--gold-hex) url(images/hero_images/main_hero1_md.jpg) center/cover no-repeat;
+        background: var(--gold-hex) url(../images/hero_images/main_hero1_md.jpg) center/cover no-repeat;
     }
 
     /* * About Us Pictures Grid */
@@ -741,10 +747,6 @@ cite {
 
     .lnd-4 {
         grid-area: lnd-4;
-    }
-
-    .about__wrapper img {
-        object-fit: cover;
     }
 
 }

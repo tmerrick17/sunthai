@@ -1,0 +1,76 @@
+100,Ahi Tuna,Appetizers,*,8,
+101,Crab Rangoon (4),Appetizers,,5.95,
+102,Fried Dumplings (Chicken) (5),Appetizers,,6.95,
+103,Fried Tofu,Appetizers,*,4.95,"Deep fried bean curd, served with our house special peanut sauce"
+104,Satay Chicken (3),Appetizers,,8.95,"Chicken marinated with fresh herbs, fried on skewers, served with peanut butter sauce and cucumber salad"
+105,Summer Rolls (2),Appetizers,,4.95,"Rice paper wrapped chicken with fresh cilantro, lettuce and noodles served with our house special peanut sauce. Made with shrimp (Friday's only - 6.95) "
+106,Thai Egg Rolls (Vegetarian) (4),Appetizers,*,4.95,
+107,Wings (5),Appetizers,,6.95,Dry rub or Thai chili sauce
+108,Combo Sampler,Appetizers,*,10.99,"(3 crab rangoons, 3 dumplings, 3 egg rolls) Sub dumplings with Fried Tofu (Friday's only)"
+450,Pad Sea-Ewe,Noodles,*,11.99,"Stir fried wide rice noodles with egg, broccoli with your choice of meat"
+451,Pad-Thai,Noodles,*,11.99,"Stir fried rice noodles with egg, bean sprouts and green onions topped with fresh cabbage, carrots and crushed peanuts and lime with your choice of meat"
+452,Tung Tag,Noodles,*,11.99,"Stir fried wide rice noodles with fresh bean sproutsm egg, green onions with your choice of meat"
+453,Kee-Moa Noodle,Noodles,*,11.99,"Stir friend wide rice noodles with bell peppers, onions, bean sprouts, tomato and basil leaves with your choice of meat"
+454,Pad Wood Sen,Noodles,*,11.99,"Stir fried bean thread noodles, egg, mushrooms, tomato, peas, onion, bean sprouts, green peppers, corn and carrots with your choice of meat"
+500,Soda,Beverages,,1.19,
+501,Ice & Hot Tea,Beverages,,1.45,
+502,Thai Ice Tea,Beverages,,2.75,To Go 4.95
+503,Thai Ice Coffee,Beverages,,2.75,To Go 4.95
+504,Domestic Beer,Beverages,,2.75,
+505,Draft Beer,Beverages,,5.95,
+506,Imported Beer,Beverages,,3.95,
+507,Wine,Beverages,,5.95,
+550,Thai Cheesecake,Desserts,,5.50,Special Sun Tai recipe from the Apple Barn
+551,Chocolate Brownie w/ Scoop of ice Cream,Desserts,,5.50,Gluten Free and made by the Apple Barn
+400,Cucumber Salad,Thai Salads,*,4.95,
+401,House Salad,Thai Salads,*,5.95,"A bed of lettuce with tomatoes, served with peanut sauce, cucumber and fried tofu"
+402,Larp Salad,Thai Salads,,6.95,"Ground chicken with red onions, carrots, seasoned with sour & salty sauce, served with lettuce"
+403,Namsod,Thai Salads,,6.95,"Ground chicken with red onions, carrots, roasted peanut & fresh ginger, seasoned with sour and salty sauce, served with lettuce"
+404,Nua Namtok,Thai Salads,,6.95,"Sliced beef with onions, carrots, seasoned with sour and salty sauce, served with lettuce"
+405,Yum Nue,Thai Salads,,6.95,"Sliced beef with cucumber, tomatoes, onions, carrots with sour & salty sauce, served with lettuce"
+406,Yum Squid,Thai Salads,*,7.95,"Boiled squid tossed with red & green onions, carrots, season with sour and salty sauce served with lettuce"
+407,Yum Seafood,Thai Salads,*,7.95,"Mixed squid, shrimp & imitation crab meat, carrots in a tasy sour and salty sauce, served with lettuce"
+408,Yum Woon Sen,Thai Salads,,8.95,"Mixture of vermicelli noodles, shrimp, ground chicken, red onion, green onions, carrots in a tasy sour and salty sauce, served with lettuce"
+350,Fried Rice,Rice Dishes,*,9.99,"Steamed rice fried with egg, tomatoes, onion and your choice of meat"
+351,Curry Fried Rice,Rice Dishes,*,9.99,"Steamed rice fried with egg, tomatoes, onion, curry powder and your choice of meat"
+352,Fried Rice Combo,Rice Dishes,,10.99,"Steamed rice fried with egg, tomato, and a combination of beef, pork, chicken and shrimp"
+353,Basil Fried Rice,Rice Dishes,*,9.99,"Steamed rice fried with onion, pepper, basil leaves and your choice of meat"
+354,Basil Leaves Over Rice,Rice Dishes,*,9.99,"Green pepper, onion and basil leaves over rice with your choice of meat"
+355,Pad Ped Over Rice,Rice Dishes,*,9.99,"Bamboo shoots, green pepper and basil leaves, green beans over rice with red curry sauce and coconut milk"
+356,Chili On Rice,Rice Dishes,*,9.99,"Stir fry baby corn, onions, mushrooms, bell peppers with your choice of meat"
+200,Mongolian Beef,Chinese Lunch,,7.99,"White onion, green onion, crispy white noodles"
+201,Broccoli Beef,Chinese Lunch,,7.99,Broccoli and carrots
+202,Broccoli Chicken,Chinese Lunch,,7.99,"Broccoli, carrots, white sauce"
+203,Green Pepper Beef,Chinese Lunch,,7.99,"White onions, green peppers, carrots"
+204,Moo Goo Gai Pan,Chinese Lunch,,7.99,"Cabbage, mushrooms, carrots, snow peas, corn, white sauce"
+205,"Kung Pao Chicken, Beef or Pork",Chinese Lunch,,7.99,"White onion, mushrooms, bell peppers, corn, carrots, peanuts"
+206,"Sauteed Mixed Vegetables witih Pork, Beef or Chicken",Chinese Lunch,,7.99,"Cabbage, corn, broccoli, carrots and snow peas"
+207,Sweet and Sour Chicken,Chinese Lunch,,7.99,"White onion, green peppers, pineapple and carrots"
+208,General Tso's Chicken,Chinese Lunch,,7.99,"White onion, broccoli and carrots"
+209,Sesame Chicken,Chinese Lunch,,7.99,"White onion, broccoli and carrots"
+210,"Chop Suey with Chicken, Beef or Pork",Chinese Lunch,,7.99,"White onion, cabbage, carrots, green peppers and bean sprouts"
+211,Almond Chicken ,Chinese Lunch,,7.99,"White onion, mushrooms, green peppers and carrots"
+250,Ginger Chicken,Thai Lunch,,7.99,
+251,Basil Chicken,Thai Lunch,,7.99,
+252,Cashew Chicken,Thai Lunch,,7.99,
+253,"Garlic Black Pepper Pork, Beef or Chicken",Thai Lunch,,7.99,
+254,Oyster Sauce Beef,Thai Lunch,,7.99,
+255,"Chili Paste Pork, Beef or Chicken",Thai Lunch,,7.99,
+256,Asparagus Chicken,Thai Lunch,,7.99,
+257,"Pad Sea-Ewe Pork, Beef or Chicken",Thai Lunch,,7.99,(not served with rice)
+258,"Pad Thai Pork, Beef or Chicken",Thai Lunch,,7.99,(not served with rice)
+300,Asparagus,Dinner,,11.99,Asparagus stir fried with your choice of meat
+301,Rama Curry Tofu,Dinner,,11.99,Slices of tofu in a sweet peanut sauce with crushed peanuts on a bed of broccoli
+302,Chili Paste,Dinner,,11.99,"Mushrooms, onions, basil and your choice of meat"
+303,Garlic Black Pepper,Dinner,,11.99,"Sauteed in our garlic sauce, mushrooms served with steamed broccoli, carrots and your choice of meat"
+304,Pepper Steak,Dinner,,11.99,"Sauteed beef with bell peppers, tomatoes, mushrooms, carrots, baby corn, white onions and green onions"
+305,Cashew Nut,Dinner,,11.99,"Sauteed chicken with onion, peas, bell peppers, pineapple, tomatoes and carrots"
+306,Oyster Sauce Beef,Dinner,,11.99,"Sauteed beef with bamboo shoots, mushroom and white onions"
+307,Ginger,Dinner,,11.99,"Sauteed ginger, white onions, green onions, baby corn, mushrooms, carrots and bell peppers with your choice of meat"
+308,Red Pad Ped,Dinner,,11.99,"Red curry paste made with coconut milk with basil, bamboo shoots, green peppers, green beans with your choice of meat"
+309,Pad Prik,Dinner,,11.99,"Sauteed bamboo shoots, peppers, white and green onions with your choice of meat"
+310,Basil,Dinner,,11.99,"Sauteed ground chicken with basil leaves, white onions and bell peppers"
+311,Panang,Dinner,,11.99,Cooked in panang curry with bell peppers and coconut milk and your choice of meat
+312,Red Curry,Dinner,,11.99,"Cooked in red curry, bamboo shoots, bell peppers, basil leaves and coconut milk with your choice of meat"
+313,Green Curry,Dinner,,11.99,"Cooked in green curry, bamboo shoots, bell peppers, basil leaves and coconut milk with your choice of meat"
+314,Musamon Curry,Dinner,,11.99,"Cooked in musamon curry, potatoes, red onions and roasted peanut with coconut milk and your choice of meat"
