@@ -72,7 +72,7 @@ img {
 
 /* * Main Header*/
 .hero__area {
-    background: var(--violet-hex) url(../images/hero_images/main_hero1_sm.jpg) center/cover no-repeat;
+    background: url(../images/hero_images/main_hero1_sm.jpg) center/cover no-repeat;
     height: 100vh;
 }
 
@@ -130,7 +130,7 @@ img {
     width: 4rem;
     height: 4rem;
     padding: 1rem;
-    background-color: rgba(240, 195, 81, 0.8);
+    background-color: rgba(240, 195, 81, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,7 +219,7 @@ img {
 }
 
 .mbl__nav .nav > div {
-    background-color: rgba(242, 185, 39, .95);
+    background-color: rgba(242, 185, 39, 0.95);
     border-radius: 50%;
     width: 100vh;
     height: 100vh;
@@ -294,11 +294,64 @@ img {
 
 /* * Subtle Background Pattern */
 .subtle-bg {
-    background: #FFF url(../images/misc_images/lilypads.png);
+    background: #fff url(../images/misc_images/lilypads.png);
 }
 
 
- /* * Menu Category Button Styling */
+/* * Footer Styling */
+.ftr__primary {
+    display: flex;
+    flex-direction: column;
+    background: var(--gold-hex);
+    align-items: center;
+}
+
+.ftr-paddings {
+    padding: 1.5rem 1rem;
+}
+
+.ftr__nav {
+    margin-top: 1rem;
+}
+
+.soc-icon__wrapper {
+    width: 2rem;
+}
+
+.soc-icon__wrapper a:hover,
+.soc-icon__wrapper a:focus {
+    opacity: 0.7;
+}
+
+.ftr__menu-list {
+    display: flex;
+    flex-direction: row;
+    width: 18rem;
+    justify-content: space-between;
+}
+
+.ftr__menu__item {
+    font-size: 1rem;
+}
+
+.menu__link {
+    font-family: 'Poppins', sans-serif;
+}
+
+.copyright {
+    margin-top: 1rem;
+}
+
+
+/* **** Menu Page ****/
+
+/* * Menu Hero */
+.menu-hero__area {
+    background: url(../images/hero_images/menu_hero_sm.jpg) center/cover no-repeat;
+    height: 190px;
+}
+
+/* * Menu Category Button Styling */
 .menu-category__area {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -330,10 +383,6 @@ img {
 
 
 /* * Menu Sub-Headers and All Category Images */
-/* .menu__area {
-    max-width: 1200px;
-} */
-
 .sub__hdr {
     width: 100vw;
     height: 30vh;
@@ -458,57 +507,16 @@ img {
 }
 
 
-/* * Footer Styling */
-.ftr__primary {
-    display: flex;
-    flex-direction: column;
-    background: var(--gold-hex);
-    align-items: center;
-}
-
-.soc-icon__wrapper {
-    width: 2rem;
-}
-
-.soc-icon__wrapper a:hover,
-.soc-icon__wrapper a:focus {
-    opacity: 0.7;
-}
-
-.ftr__menu-list {
-    display: flex;
-    flex-direction: row;
-    width: 18rem;
-    justify-content: space-between;
-}
-
-.ftr__menu__item {
-    font-size: 1rem;
-}
-
-.menu__link {
-    font-family: 'Poppins', sans-serif;
-}
-
-
-/* * Hero Page */
-
-/* * Hero Hero */
-.menu-hero__area {
-    background: var(--violet-hex) url(../images/hero_images/menu_hero_sm.jpg) center/cover no-repeat;
-    height: 30vh;
-}
-
 /* * About Us Page */
 
 /* * About Us Hero */
 .about-hero__area {
-    background: var(--violet-hex) url(../images/hero_images/about_hero_sm.jpg) center/cover no-repeat;
-    height: 30vh;
+    background: url(../images/hero_images/about_hero_sm.jpg) center/cover no-repeat;
+    height: 190px;
 }
 
 .logo-mod {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 4rem;
     padding: 1.2rem 2rem 1rem 1.5rem;
 }
@@ -555,6 +563,10 @@ img {
     padding: 4rem 2rem;
 }
 
+figure {
+    width: 55ch;
+}
+
 blockquote {
     font-style: italic;
 }
@@ -570,6 +582,15 @@ cite {
     line-height: 1rem;
 }
 
+.cite-link {
+    text-decoration: underline;
+}
+
+.cite-link:hover,
+.cite-link:focus {
+    color: #707070;
+}
+
 .solo-cite {
     margin-top: 2rem
 }
@@ -579,8 +600,8 @@ cite {
 
 /* * Contact Us Hero */
 .contact-hero__area {
-    background: var(--violet-hex) url(../images/hero_images/contact_hero_sm.jpg) center/cover no-repeat;
-    height: 30vh;
+    background: url(../images/hero_images/contact_hero_sm.jpg) center/cover no-repeat;
+    height: 190px;
 }
 
 /* * Contact Us Form Styling */
@@ -747,9 +768,7 @@ cite {
 @media screen and (min-width: 768px) {
     /* * Home Page Hero Area */
     .hero__area {
-        background: var(--gold-hex) url(../images/hero_images/main_hero1_md.jpg) center/cover no-repeat;
-        display: flex;
-
+        background: url(../images/hero_images/main_hero1_md.jpg) cover no-repeat;
     }
 
     .logo-menu-group {
@@ -768,10 +787,9 @@ cite {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background: rgba(255, 255, 255, 0.8);
+        background: rgba(255, 255, 255, 0.93);
         border-radius: 4rem;
         padding: .2rem 2rem;
-
     }
 
     .menu__item {
@@ -790,7 +808,18 @@ cite {
         display: none;
     }
 
+    /* * Menu Page */
+    .menu-hero__area {
+        background: url(../images/hero_images/menu_hero_md.jpg) center/cover no-repeat;
+        height: 190px;
+    }
+
     /* * About Us Pictures Grid */
+    .about-hero__area {
+        background: url(../images/hero_images/about_hero_md.jpg) center/cover no-repeat;
+        height: 190px;
+    }
+
     .about__wrapper {
         display: grid;
         grid-template-areas: 
@@ -823,6 +852,15 @@ cite {
         grid-area: ptr-2;
     }
 
+    /* ! ptr-3 hidden in Mobile & Tablet view */
+    .ptr-3 {
+        grid-area: ptr-3;
+    }
+    /* ! ptr-4 hidden in Mobile & Tablet view */
+    .ptr-4 {
+        grid-area: ptr-4;
+    }
+
     .lnd-1 {
         grid-area: lnd-1;
     }
@@ -839,6 +877,17 @@ cite {
         grid-area: lnd-4;
     }
 
+    .ptr-3,
+    .ptr-4 {
+        display: none;
+    }
+
+    /* * Contact Us Page */
+    .contact-hero__area {
+        background: url(../images/hero_images/contact_hero_md.jpg) center/cover no-repeat;
+        height: 190px;
+    }
+
 }
 
 
@@ -849,13 +898,65 @@ cite {
         flex-direction: row;
     }
 
-
     .msg textarea {
         height: 16.28rem
     }
 
+}
+
+/* * Desktop Tweekpoint */
+@media screen and (min-width: 1366px) {
+    
+    
+    /* * About Us Page */
+    .about__wrapper {
+        display: grid;
+        grid-template-areas: 
+            "qte-1 qte-1 qte-1"
+            "ptr-1 lnd-1 ptr-3"
+            "ptr-1 lnd-2 ptr-3"
+            "qte-2 qte-2 qte-2"
+            "ptr-4 lnd-3 ptr-2"
+            "ptr-4 lnd-4 ptr-2"
+            "qte-3 qte-3 qte-3";   
+    }
+
+    .ptr-3,
+    .ptr-4 {
+        display: grid;
+    }
 
 }
+
+
+/* * Large Desktop Viewpoint */
+@media screen and (min-width: 1920px) {
+    /* * Home Page Hero Area */
+    .hero__area {
+        background: url(../images/hero_images/main_hero1_lg.jpg) 50% 65%/cover no-repeat;
+    }
+
+    /* * Menu Page */
+    .menu-hero__area {
+        background: url(../images/hero_images/menu_hero_lg.jpg) center/cover no-repeat;
+        height: 190px;
+    }
+
+    /* * About Us Page */
+    .about-hero__area {
+        background: url(../images/hero_images/about_hero_lg.jpg) 50% 10%/cover no-repeat;
+        height: 190px;
+    }
+
+    /* * Contact Us Page  */
+    .contact-hero__area {
+        background: url(../images/hero_images/contact_hero_lg.jpg) center/cover no-repeat;
+        height: 190px;
+    }
+
+}
+
+
 
 
 
