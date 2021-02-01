@@ -893,6 +893,47 @@ cite {
 
 /* * Desktop Viewport */
 @media screen and (min-width: 1024px) {
+    /* * Menu Page */
+    .appetizer__hero {
+        background: var(--violet-hex) url(../images/menu_images/appetizers_md.jpg) center/cover no-repeat;
+    }
+    
+    .soups__hero {
+        background: var(--violet-hex) url(../images/menu_images/soup_md.jpg) center/cover no-repeat;
+    }
+    
+    .chi-lunch__hero {
+        background: var(--violet-hex) url(../images/menu_images/chi_lunch_md.jpg) center/cover no-repeat;
+    }
+    
+    .thai-lunch__hero {
+        background: var(--violet-hex) url(../images/menu_images/thai_lunch_md.jpg) center/cover no-repeat;
+    }
+    
+    .dinner__hero {
+        background: var(--violet-hex) url(../images/menu_images/dinner_md.jpg) center/cover no-repeat;
+    }
+    
+    .rice__hero {
+        background: var(--violet-hex) url(../images/menu_images/rice_md.jpg) center/cover no-repeat;
+    }
+    
+    .salads__hero {
+        background: var(--violet-hex) url(../images/menu_images/salads_md.jpg) center/cover no-repeat;
+    }
+    
+    .noodles__hero {
+        background: var(--violet-hex) url(../images/menu_images/noodles_md.jpg) center/cover no-repeat;
+    }
+    
+    .beverages__hero {
+        background: var(--violet-hex) url(../images/menu_images/beverages_md.jpg) center/cover no-repeat;
+    }
+    
+    .deserts__hero {
+        background: var(--violet-hex) url(../images/menu_images/deserts_md.jpg) center/cover no-repeat;
+    }
+    
     /* * Contact Us Form Styling */
     .contact-form {
         flex-direction: row;
