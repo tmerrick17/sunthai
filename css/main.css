@@ -2,6 +2,7 @@
 :root {
     --gold-hex: #E9B13E;
     --violet-hex: #351246;
+    scroll-behavior: smooth;
 }
 
 /* * CSS Reset and Universal Styles */
